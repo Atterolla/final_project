@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API 1</title>
+</head>
+<body>
+    <h1>Summarized Information</h1>
+    <% if (summarizedInfo) { %>
+        <% summarizedInfo.forEach(info => { %>
+            <h2><%= info.title %></h2>
+            <p><%= info.summary %></p>
+        <% }) %>
+    <% } else { %>
+        <p>No summarized information available.</p>
+    <% } %>
+</body>
+</html>
